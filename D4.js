@@ -223,18 +223,17 @@ switch (true) {
   case total_mass === 500:
     console.log("Ship is half loaded");
     break;
-  case total_mass <= 700:
-    console.log("Warning: Load is almost at 700");
-    break;
-  case total_mass > 700:
+  case total_mass > 700 && total_mass < 900:
     console.log("Warning: Load is over 700");
     break;
-  case total_mass > 900:
+  case total_mass >= 900 && total_mass < 1000:
     console.log("Critical Load: Over 900");
     break;
-  case total_mass > 1000:
+  case total_mass >= 1000:
     console.log("DANGER! OVERLOAD ALERT: Jump ship now!");
     break;
+  default:
+    console.log("no data provided");
 }
 
 /* ESERCIZIO 8
@@ -244,6 +243,13 @@ Usa un for loop per cambiare il valore della proprietà "gender" di alcuni perso
 console.log("----------------------------Ex.8---------------------------");
 // RISPOSTA:
 
+for (let i = 0; i < starWarsCharacters.lenght; i++) {
+  if (starWarsCharacters[i].gender === "n/a") {
+    starWarsCharacters[i].gender = "robot";
+  }
+}
+
+console.log(starWarsCharacters);
 /*
 Utilizzando gli elementi presenti nell'array "femaleCharacters" rimuovi dall'array "characters" le stringhe corrispondenti a personaggi con lo stesso nome"
 Usa uno più for loop per raggiungere il risultato

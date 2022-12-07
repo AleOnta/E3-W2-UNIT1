@@ -203,8 +203,7 @@ while (i < starWarsCharacters.length) {
 console.log("The total mass of the equipe is:", total_mass);
 
 /* ESERCIZIO 7
-
-Crea uno switch statement per rivelare la tipologia di carico, utilizzando la massa totale, di un'impotetica astronave contenente i personaggi dell'array "starWarsCharacters"
+Crea uno switch statement per rivelare la tipologia di carico, utilizzando la massa totale, di un'ipotetica astronave contenente i personaggi dell'array "starWarsCharacters"
 (cerca su un motore di ricerca switch case e conditionals)
 
 Se la massa è inferiore a 500 stampa in console: "Ship is under loaded",
@@ -217,14 +216,35 @@ Una volta fatto, modifica la massa di qualche elemento dell'equipaggio e vedi se
 */
 console.log("----------------------------Ex.7---------------------------");
 // RISPOSTA:
+switch (true) {
+  case total_mass < 500:
+    console.log("Ship is under loaded");
+    break;
+  case total_mass === 500:
+    console.log("Ship is half loaded");
+    break;
+  case total_mass <= 700:
+    console.log("Warning: Load is almost at 700");
+    break;
+  case total_mass > 700:
+    console.log("Warning: Load is over 700");
+    break;
+  case total_mass > 900:
+    console.log("Critical Load: Over 900");
+    break;
+  case total_mass > 1000:
+    console.log("DANGER! OVERLOAD ALERT: Jump ship now!");
+    break;
+}
+
 /* ESERCIZIO 8
 
 Usa un for loop per cambiare il valore della proprietà "gender" di alcuni personaggi dal valore "n/a" a "robot" (Tip: puoi creare un nuovo array, o tentare la riassegnazione del valore corrispondente)
 */
 console.log("----------------------------Ex.8---------------------------");
 // RISPOSTA:
-/* EXTRA ESERCIZIO 9
 
+/*
 Utilizzando gli elementi presenti nell'array "femaleCharacters" rimuovi dall'array "characters" le stringhe corrispondenti a personaggi con lo stesso nome"
 Usa uno più for loop per raggiungere il risultato
 

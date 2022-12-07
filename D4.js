@@ -1,3 +1,5 @@
+const { gray } = require("d3-color");
+
 const starWarsCharacters = [
   {
     name: "Luke Skywalker",
@@ -147,6 +149,17 @@ console.log(femaleCharacters);
 */
 console.log("----------------------------Ex.4---------------------------");
 // RISPOSTA:
+
+const eyeColor = {
+  blue: [],
+  yellow: [],
+  brown: [],
+  red: [],
+  blue_gray: [],
+};
+
+console.log(eyeColor);
+
 /* ESERCIZIO 5
   Inserisci l'oggetto dei personaggi in "starWarsCharacters" nell'array corrispondente al colore dei loro occhi nell'oggetto "eyeColor" precedentemente creato.
   Utilizza uno switch statement per determinare in quale proprietà inserire il personaggio

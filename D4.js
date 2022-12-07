@@ -117,6 +117,11 @@ Come risultato dovresti ottenere qualcosa di simile: ["Luke Skywalker", "C-3PO",
 console.log("----------------------------Ex.2---------------------------");
 // RISPOSTA:
 
+for (let i = 0; i < starWarsCharacters.length; i++) {
+  characters.push(starWarsCharacters[i].name);
+}
+
+console.log(characters);
 /* ESERCIZIO 3
   Seguendo i passaggi precedenti crea un array chiamato "femaleCharacters" e inserisci solo oggetti di personaggi femminili con questa struttura di esempio: 
   {name: Leia Organa, hair_color: "brown", eye_color: "brown"}

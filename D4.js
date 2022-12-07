@@ -107,6 +107,8 @@ Crea una variabile chiamata "characters" e inserisci un array vuoto
 console.log("----------------------------Ex.1---------------------------");
 // RISPOSTA:
 
+let characters = [];
+
 /* ESERCIZIO 2
 Usando un for loop, cicla l'array "starWarsCharacters" ed accedi alla proprietà "name". 
 Usa il valore contenuto inserendolo nell'array creato precedentemente. 

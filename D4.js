@@ -1,5 +1,3 @@
-const { gray } = require("d3-color");
-
 const starWarsCharacters = [
   {
     name: "Luke Skywalker",
@@ -155,7 +153,7 @@ const eyeColor = {
   yellow: [],
   brown: [],
   red: [],
-  blue_gray: [],
+  ["blue-gray"]: [],
 };
 
 console.log(eyeColor);
@@ -166,11 +164,35 @@ console.log(eyeColor);
 */
 console.log("----------------------------Ex.5---------------------------");
 // RISPOSTA:
+
+for (let i = 0; i < starWarsCharacters.length; i++) {
+  switch (starWarsCharacters[i].eye_color) {
+    case "blue":
+      eyeColor.blue.push(starWarsCharacters[i]);
+      break;
+    case "yellow":
+      eyeColor.yellow.push(starWarsCharacters[i]);
+      break;
+    case "brown":
+      eyeColor.brown.push(starWarsCharacters[i]);
+      break;
+    case "red":
+      eyeColor.red.push(starWarsCharacters[i]);
+      break;
+    case "blue-gray":
+      eyeColor["blue-gray"].push(starWarsCharacters[i]);
+      break;
+  }
+}
+
+console.log(eyeColor);
+
 /* ESERCIZIO 6
   Usa un while loop per calcolare la massa totale dell'equipaggio
 */
 console.log("----------------------------Ex.6---------------------------");
 // RISPOSTA:
+
 /* ESERCIZIO 7
 
 Crea uno switch statement per rivelare la tipologia di carico, utilizzando la massa totale, di un'impotetica astronave contenente i personaggi dell'array "starWarsCharacters"

@@ -108,6 +108,7 @@ console.log("----------------------------Ex.1---------------------------");
 // RISPOSTA:
 
 let characters = [];
+console.log(characters);
 
 /* ESERCIZIO 2
 Usando un for loop, cicla l'array "starWarsCharacters" ed accedi alla proprietà "name". 
@@ -122,12 +123,24 @@ for (let i = 0; i < starWarsCharacters.length; i++) {
 }
 
 console.log(characters);
+
 /* ESERCIZIO 3
   Seguendo i passaggi precedenti crea un array chiamato "femaleCharacters" e inserisci solo oggetti di personaggi femminili con questa struttura di esempio: 
   {name: Leia Organa, hair_color: "brown", eye_color: "brown"}
 */
 console.log("----------------------------Ex.3---------------------------");
 // RISPOSTA:
+
+let femaleCharacters = [];
+
+for (let i = 0; i < starWarsCharacters.length; i++) {
+  if (starWarsCharacters[i].gender === "female") {
+    femaleCharacters.push(starWarsCharacters[i]);
+  }
+}
+
+console.log(femaleCharacters);
+
 /* ESERCIZIO 4
   Crea un oggetto "eyeColor" che abbia come proprietà: blue, yellow, brown, red, blue-gray.
   ognuna di queste proprietà contiene un array vuoto

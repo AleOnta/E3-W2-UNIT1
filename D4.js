@@ -192,6 +192,15 @@ console.log(eyeColor);
 */
 console.log("----------------------------Ex.6---------------------------");
 // RISPOSTA:
+let i = 0;
+let total_mass = 0;
+
+while (i < starWarsCharacters.length) {
+  total_mass = total_mass + Number(starWarsCharacters[i].mass);
+  i = i + 1;
+}
+
+console.log("The total mass of the equipe is:", total_mass);
 
 /* ESERCIZIO 7
 

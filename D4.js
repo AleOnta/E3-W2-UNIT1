@@ -250,14 +250,27 @@ for (let i = 0; i < starWarsCharacters.lenght; i++) {
 }
 
 console.log(starWarsCharacters);
-/*
+
+/* EXTRA ESERCIZIO 9
+
 Utilizzando gli elementi presenti nell'array "femaleCharacters" rimuovi dall'array "characters" le stringhe corrispondenti a personaggi con lo stesso nome"
 Usa uno più for loop per raggiungere il risultato
-
 (tip: cerca un metodo degli array per rimuovere un elemento)
-
 Una volta fatto, crea un console.log() per controllare la proprietà length di "characters" prima e dopo l'operazione
 */
+console.log("----------------------------Ex.8---------------------------");
+// RISPOSTA:
+
+console.log(characters.lenght);
+
+for (let i = 0; i < characters.length; i++) {
+  if (characters[i] === "Leia Organa" || characters[i] === "Beru Whitesun lars") {
+    characters.pop(characters[i]);
+  } else {
+    console.log("The character number", i, "it's not a female.");
+    console.log(characters);
+  }
+}
 
 /* EXTRA ESERCIZIO 10
 
